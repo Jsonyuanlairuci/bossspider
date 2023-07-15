@@ -68,22 +68,23 @@ class BossSpider():
         while index<11:
             time.sleep(random.randint(10,15))
             lis=WebDriverWait(driver=driver,timeout=100).until(
-                EC.presence_of_all_elements_located((By.XPATH,'//ul[class="job-list-box"]/li'))
+                EC.presence_of_all_elements_located((By.XPATH,'//*[@id="wrap"]//ul[@class="job-list-box"]/li'))
             )
+            
             for li in lis:
-                workNameStr=li.find_element(By.XPATH,'.///span[@class="job-name"]').text
-                positionStr=li.find_element(By.XPATH,'.///span[@class="job-area"]').text
-                salaryRangeStr=li.find_element(By.XPATH,'.///span[@class="salary"]').text
-                experienceRangeStr=li.find_element(By.XPATH,'.///ul[@class="tag-list"]/li[1]').text
-                educationStr=li.find_element(By.XPATH,'.///div[@class="job-info clearfix"]/ul/li[2]').text
-                companyNameStr=li.find_element(By.XPATH,'.///h3[@class="company-name"]/a').text
+                workNameStr=li.find_element(By.XPATH,'.//span[@class="job-name"]').text
+                positionStr=li.find_element(By.XPATH,'.//span[@class="job-area"]').text
+                salaryRangeStr=li.find_element(By.XPATH,'.//span[@class="salary"]').text
+                experienceRangeStr=li.find_element(By.XPATH,'.//ul[@class="tag-list"]/li[1]').text
+                educationStr=li.find_element(By.XPATH,'.//div[@class="job-info clearfix"]/ul/li[2]').text
+                companyNameStr=li.find_element(By.XPATH,'.//h3[@class="company-name"]/a').text
                 # peopleNumRangeStr=li.find_element(By.XPATH,'.//div[1]/div/div[2]/ul/li[3]').text
-                techStackEles=li.find_elements(By.XPATH,'.///div[@class="job-card-footer clearfix"]/ul/lii')
+                techStackEles=li.find_elements(By.XPATH,'.//div[@class="job-card-footer clearfix"]/ul/li')
                 techStackStr=''
                 for index in range(len(techStackEles)):
                     techStackStr+=techStackEles[index].text+'/'
 
-                companyInfoList=li.find_elements(By.XPATH,'.///div[@class="company-info"]/ul[@class="company-tag-list"]/li')
+                companyInfoList=li.find_elements(By.XPATH,'.//div[@class="company-info"]/ul[@class="company-tag-list"]/li')
                 companyInfoStr=''
                 for index in range(len(companyInfoList)):
                     companyInfoStr+=companyInfoList[index].text+'/'

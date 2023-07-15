@@ -1,0 +1,90 @@
+{'work_name': 'php 开发工程师', 'position': '成都·成华区·建设路', 'salary_range': '6-8K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '房拓科技', 'company_info': '工程施工/未融资/20-99人/'}
+{'work_name': 'PHP 开发工程师', 'position': '成都·武侯区·新会展中心', 'salary_range': '6-9K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '原创天下', 'company_info': '计算机软件/未融资/0-20人/'}
+{'work_name': 'PHP 开发工程师', 'position': '成都·武侯区·簇桥', 'salary_range': '8-12K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '杭州欧商', 'company_info': '电子商务/不需要融资/0-20人/'}
+{'work_name': 'PHP 程序', 'position': '成都·金牛区·茶店子', 'salary_range': '3-6K', 'experience': '1年以内', 'education': '学历不限', 'tech_stack': '', 'company': '成都极客联盟', 'company_info': '移动互联网/未融资/0-20人/'}
+{'work_name': 'PHP 工程师', 'position': '成都·成华区·万年场', 'salary_range': '4-5K', 'experience': '经验不限', 'education': '本科', 'tech_stack': '', 'company': '福华科技', 'company_info': '互联网/20-99人/'}
+{'work_name': 'PHP 后端开发', 'position': '成都·成华区·建设路', 'salary_range': '6-11K', 'experience': '1-3年', 'education': '学历不限', 'tech_stack': '', 'company': '在下佩服', 'company_info': '互联网/未融资/0-20人/'}
+{'work_name': 'PHP Magento后端开发', 'position': '成都·武侯区·新会展中心', 'salary_range': '7-12K·13薪', 'experience': '1-3年', 'education': '本科', 'tech_stack': '', 'company': '顺热科技', 'company_info': '文化/体育/娱乐/0-20人/'}
+{'work_name': 'PHP 高级开发工程师', 'position': '成都·武侯区·孵化园', 'salary_range': '13-18K', 'experience': '5-10年', 'education': '本科', 'tech_stack': '', 'company': '远睿科技', 'company_info': '电子商务/不需要融资/100-499人/'}
+{'work_name': 'php开发', 'position': '成都·武侯区·新会展中心', 'salary_range': '10-14K·13薪', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '凌霖科技', 'company_info': '计算机软件/未融资/20-99人/'}
+{'work_name': 'PHP开发', 'position': '成都·武侯区·新会展中心', 'salary_range': '8-10K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '博彦科技', 'company_info': '计算机软件/已上市/10000人以上/'}
+{'work_name': 'php开发', 'position': '成都·武侯区·新会展中心', 'salary_range': '7-12K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '万章盈科', 'company_info': '移动互联网/未融资/100-499人/'}
+{'work_name': 'php开发', 'position': '成都·武侯区·新会展中心', 'salary_range': '7-12K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '酷盒信息', 'company_info': '企业服务/未融资/20-99人/'}
+{'work_name': 'php开发', 'position': '成都·武侯区·红牌楼', 'salary_range': '6-10K', 'experience': '1-3年', 'education': '本科', 'tech_stack': '', 'company': '易客来', 'company_info': '移动互联网/未融资/20-99人/'}
+{'work_name': 'PHP开发', 'position': '成都·武侯区·新会展中心', 'salary_range': '4-8K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '美冀科技', 'company_info': '计算机软件/未融资/20-99人/'}
+{'work_name': 'PHP开发', 'position': '成都·双流区·华阳', 'salary_range': '5-8K', 'experience': '1-3年', 'education': '学历不限', 'tech_stack': '', 'company': '锐萌软件开发有限公司', 'company_info': '电子商务/未融资/20-99人/'}
+{'work_name': 'PHP开发', 'position': '成都·成华区·建设路', 'salary_range': '8-12K', 'experience': '3-5年', 'education': '学历不限', 'tech_stack': '', 'company': '广龙信息技术有限公司', 'company_info': '在线教育/0-20人/'}
+{'work_name': 'PHP开发', 'position': '成都·武侯区·复城国际广场', 'salary_range': '4-9K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '易联云', 'company_info': '智能硬件/未融资/20-99人/'}
+{'work_name': 'PHP开发', 'position': '成都·金牛区·五块石', 'salary_range': '6-8K·13薪', 'experience': '1-3年', 'education': '学历不限', 'tech_stack': '', 'company': '推来客网络', 'company_info': '企业服务/0-20人/'}
+{'work_name': 'php开发', 'position': '成都·金牛区·茶店子', 'salary_range': '8-13K', 'experience': '5-10年', 'education': '本科', 'tech_stack': '', 'company': '创贸集团', 'company_info': '互联网/A轮/1000-9999人/'}
+{'work_name': 'PHP开发', 'position': '成都·武侯区·银泰城', 'salary_range': '7-12K', 'experience': '3-5年', 'education': '学历不限', 'tech_stack': '', 'company': '域卫科技', 'company_info': '信息安全/天使轮/20-99人/'}
+{'work_name': 'PHP开发经理', 'position': '成都·成华区·财富又一城', 'salary_range': '12-22K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '四川国邦华众', 'company_info': '医疗健康/未融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·金牛区·金沙', 'salary_range': '10-15K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '心速', 'company_info': '社交网络/未融资/0-20人/'}
+{'work_name': 'php开发工程师', 'position': '成都·龙泉驿区·成龙路', 'salary_range': '6-11K·13薪', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '云裳科技', 'company_info': '贸易/进出口/未融资/100-499人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·机投', 'salary_range': '4-6K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '众益云', 'company_info': '互联网/未融资/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都', 'salary_range': '4-9K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '四川华泰电气', 'company_info': '机械设备/机电/重工/未融资/100-499人/'}
+{'work_name': 'php开发工程师', 'position': '成都·锦江区·合江亭', 'salary_range': '7-10K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '安古', 'company_info': '互联网/未融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·温江区·公平', 'salary_range': '5-10K', 'experience': '经验不限', 'education': '本科', 'tech_stack': '', 'company': '思可觅', 'company_info': '互联网/天使轮/0-20人/'}
+{'work_name': 'php开发工程师', 'position': '成都·武侯区·环球中心', 'salary_range': '8-10K', 'experience': '1-3年', 'education': '本科', 'tech_stack': '', 'company': '途商网络', 'company_info': '互联网/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都', 'salary_range': '7-10K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '毛孩儿科技', 'company_info': '宠物服务/未融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·金牛区·欢乐谷', 'salary_range': '11-18K', 'experience': '5-10年', 'education': '大专', 'tech_stack': '', 'company': '聚创医药', 'company_info': '医疗健康/未融资/500-999人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·锦江区·天府广场', 'salary_range': '7-12K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '益企云', 'company_info': '互联网/不需要融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·环球中心', 'salary_range': '10-15K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '杭州阔知网络', 'company_info': '在线教育/A轮/100-499人/'}
+{'work_name': 'php开发工程师', 'position': '成都·武侯区·九方购物中心', 'salary_range': '6-8K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '公明科技', 'company_info': '互联网/0-20人/'}
+{'work_name': 'php开发工程师', 'position': '成都·武侯区·银泰城', 'salary_range': '3-6K', 'experience': '经验不限', 'education': '学历不限', 'tech_stack': '', 'company': '成都伍道微智科技', 'company_info': '游戏/20-99人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·新会展中心', 'salary_range': '6-10K', 'experience': '1年以内', 'education': '本科', 'tech_stack': '', 'company': '众思众程', 'company_info': '培训机构/未融资/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·复城国际广场', 'salary_range': '6-7K', 'experience': '1年以内', 'education': '大专', 'tech_stack': '', 'company': '艾邦视觉', 'company_info': '互联网/不需要融资/20-99人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·火车南站', 'salary_range': '6-8K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '翼畅行', 'company_info': '电子商务/不需要融资/20-99人/'}
+{'work_name': 'PHP', 'position': '成都', 'salary_range': '4-8K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '云山互娱', 'company_info': '计算机软件/未融资/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·银泰城', 'salary_range': '4-9K', 'experience': '在校/应届', 'education': '本科', 'tech_stack': '', 'company': '游帆科技', 'company_info': '移动互联网/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·红牌楼', 'salary_range': '15-20K·13薪', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '百思咨询', 'company_info': '其他专业服务/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·新会展中心', 'salary_range': '10-11K', 'experience': '10年以上', 'education': '大专', 'tech_stack': '', 'company': '成都华翊数安科技', 'company_info': '计算机服务/未融资/20-99人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·新会展中心', 'salary_range': '8-9K', 'experience': '经验不限', 'education': '学历不限', 'tech_stack': '', 'company': '尊岐科技', 'company_info': '游戏/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·温江区·公平', 'salary_range': '7-10K', 'experience': '3-5年', 'education': '学历不限', 'tech_stack': '', 'company': '鑫黍', 'company_info': '电子商务/0-20人/'}
+{'work_name': 'PHP开发师', 'position': '成都·武侯区·银泰城', 'salary_range': '9-13K', 'experience': '3-5年', 'education': '学历不限', 'tech_stack': '', 'company': '蜀银信息', 'company_info': '移动互联网/未融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·复城国际广场', 'salary_range': '13-18K·13薪', 'experience': '5-10年', 'education': '本科', 'tech_stack': '', 'company': '中美创世', 'company_info': '互联网/未融资/100-499人/'}
+{'work_name': 'php开发工程师', 'position': '成都·温江区·涌泉', 'salary_range': '7-12K', 'experience': '1-3年', 'education': '本科', 'tech_stack': '', 'company': '软服之家', 'company_info': '电子商务/未融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·金牛区·沙河源', 'salary_range': '12-20K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '乐享聚创', 'company_info': '电子商务/不需要融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·银泰城', 'salary_range': '8-10K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '鸿福天下网络', 'company_info': '移动互联网/不需要融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·银泰城', 'salary_range': '6-8K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '嗨创科技', 'company_info': '计算机软件/不需要融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·铁像寺', 'salary_range': '9-10K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '金裕环球', 'company_info': '贸易/进出口/未融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·新会展中心', 'salary_range': '9-14K', 'experience': '经验不限', 'education': '大专', 'tech_stack': '', 'company': '成都豪侠汇文化科技', 'company_info': '移动互联网/不需要融资/20-99人/'}
+{'work_name': 'php开发工程师', 'position': '成都·成华区·建设路', 'salary_range': '9-13K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '成都明空堂网络科技', 'company_info': '互联网金融/A轮/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·新会展中心', 'salary_range': '10-15K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '脱单计划', 'company_info': '社交网络/未融资/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·龙泉驿区·东山', 'salary_range': '4-8K', 'experience': '经验不限', 'education': '学历不限', 'tech_stack': '', 'company': '四川无涯智能科技...', 'company_info': '互联网/0-20人/'}
+{'work_name': 'php开发工程师', 'position': '成都·武侯区·新会展中心', 'salary_range': '6-9K', 'experience': '3-5年', 'education': '学历不限', 'tech_stack': '', 'company': '成都汇游', 'company_info': '游戏/未融资/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·金牛区·沙湾', 'salary_range': '3-6K·13薪', 'experience': '经验不限', 'education': '学历不限', 'tech_stack': '', 'company': '成都慧联客', 'company_info': '企业服务/不需要融资/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·新会展中心', 'salary_range': '11-20K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '成都无敌勇士科技公司', 'company_info': '移动互联网/未融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都', 'salary_range': '4-8K', 'experience': '经验不限', 'education': '大专', 'tech_stack': '', 'company': '引力跃迁', 'company_info': '计算机软件/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·新会展中心', 'salary_range': '3-6K', 'experience': '1-3年', 'education': '本科', 'tech_stack': '', 'company': '不凡网络科技有限公司', 'company_info': '互联网/不需要融资/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·成华区·跳蹬河', 'salary_range': '3-6K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '极牛', 'company_info': '电子商务/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·锦江区·东光', 'salary_range': '9-18K', 'experience': '5-10年', 'education': '大专', 'tech_stack': '', 'company': '祥云联合智能科技', 'company_info': '企业服务/未融资/20-99人/'}
+{'work_name': 'PHP', 'position': '成都·锦江区·三圣乡', 'salary_range': '7-9K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '舜津科技', 'company_info': '企业服务/未融资/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·新会展中心', 'salary_range': '6-9K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '优享佳', 'company_info': '计算机软件/不需要融资/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·成华区·十里店', 'salary_range': '8-13K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '凡璞科技', 'company_info': '计算机软件/0-20人/'}
+{'work_name': 'php开发程序员', 'position': '成都·青羊区·人民公园', 'salary_range': '5-10K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '百和情缘', 'company_info': '其他服务业/未融资/20-99人/'}
+{'work_name': 'PHP', 'position': '成都·新都区·新都城区', 'salary_range': '6-8K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '惠硕科技', 'company_info': '计算机软件/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·新会展中心', 'salary_range': '2-4K', 'experience': '在校/应届', 'education': '学历不限', 'tech_stack': '', 'company': '吸睛文化', 'company_info': '广告营销/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·新会展中心', 'salary_range': '15-18K·13薪', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '四川中天智汇科技', 'company_info': '计算机软件/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·郫都区·犀浦', 'salary_range': '15-16K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '咻电科技公司', 'company_info': '电子商务/不需要融资/1000-9999人/'}
+{'work_name': 'PHP', 'position': '成都·锦江区·静居寺', 'salary_range': '10-11K·13薪', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '至佳生活', 'company_info': '计算机服务/不需要融资/20-99人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·双楠', 'salary_range': '7-8K', 'experience': '1-3年', 'education': '本科', 'tech_stack': '', 'company': '狄霖店通传媒', 'company_info': '广告/公关/会展/天使轮/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·蒲江县·鹤山', 'salary_range': '12-20K·13薪', 'experience': '1-3年', 'education': '本科', 'tech_stack': '', 'company': '成都美佳供应链管...', 'company_info': '互联网/20-99人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·新会展中心', 'salary_range': '9-14K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '成都赛迪纳', 'company_info': '计算机软件/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·成华区·保和', 'salary_range': '5-10K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '久美盛', 'company_info': '电子商务/未融资/0-20人/'}
+{'work_name': 'PHP', 'position': '成都·金牛区·茶店子', 'salary_range': '6-10K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '婚美', 'company_info': '互联网/不需要融资/20-99人/'}
+{'work_name': 'PHP', 'position': '成都·武侯区·石羊场', 'salary_range': '6-11K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '酉赢集团', 'company_info': '保险/未融资/20-99人/'}
+{'work_name': '后台PHP开发工程师', 'position': '成都·武侯区·汇锦城', 'salary_range': '7-9K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '小耳朵', 'company_info': '社交网络/天使轮/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·双流区·华阳', 'salary_range': '4-8K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '慧商科技', 'company_info': '计算机软件/不需要融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·新会展中心', 'salary_range': '18-25K·13薪', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '盛安德', 'company_info': '计算机软件/未融资/500-999人/'}
+{'work_name': 'PHP开发工程师（初级）', 'position': '成都·武侯区·跳伞塔', 'salary_range': '5-8K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '云驭风书店', 'company_info': '电子商务/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·石羊场', 'salary_range': '6-8K·13薪', 'experience': '1-3年', 'education': '本科', 'tech_stack': '', 'company': '幻灭科技', 'company_info': '互联网/不需要融资/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·成华区·驷马桥', 'salary_range': '6-10K·14薪', 'experience': '3-5年', 'education': '学历不限', 'tech_stack': '', 'company': '弘棋网络', 'company_info': '互联网/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·新会展中心', 'salary_range': '7-10K·13薪', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '播盟科技', 'company_info': '互联网/不需要融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·机投', 'salary_range': '4-8K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '方企网络', 'company_info': '互联网/未融资/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·银泰城', 'salary_range': '8-10K', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '斯安科技', 'company_info': '互联网/A轮/20-99人/'}
+{'work_name': 'php开发工程师', 'position': '成都·武侯区·火车南站', 'salary_range': '10-15K·13薪', 'experience': '1-3年', 'education': '大专', 'tech_stack': '', 'company': '成都鹭乐魔方科技', 'company_info': '移动互联网/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·青羊区·鹏瑞利.青羊广场', 'salary_range': '10-15K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': '搜搜电商', 'company_info': '互联网/A轮/20-99人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·磨子桥', 'salary_range': '5-8K', 'experience': '3-5年', 'education': '大专', 'tech_stack': '', 'company': '中壹创兴', 'company_info': '企业服务/0-20人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·武侯区·新会展中心', 'salary_range': '13-16K', 'experience': '3-5年', 'education': '本科', 'tech_stack': '', 'company': 'IFUN', 'company_info': '游戏/不需要融资/100-499人/'}
+{'work_name': 'PHP开发工程师', 'position': '成都·锦江区·琉璃场', 'salary_range': '13-26K', 'experience': '经验不限', 'education': '本科', 'tech_stack': '', 'company': '麦客CRM', 'company_info': '企业服务/A轮/20-99人/'}
