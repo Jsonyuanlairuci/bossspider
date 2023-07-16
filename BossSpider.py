@@ -35,7 +35,7 @@ class BossSpider():
         code=input('请输入验证码：')
         if len(code)>0:
             # 输入验证码并且登录
-            codeInput=driver.find_element(By.XPATH,'//*[@id="wrap"]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/span/input[@type="tel"]')
+            codeInput=driver.find_element(By.XPATH,'//*[@id="wrap"]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/span/input')
             codeInput.send_keys(code)
             time.sleep(1)
             # 同意协议
@@ -49,15 +49,16 @@ class BossSpider():
     
     
     def searchWork(self):
-        time.sleep(random.randint(2,4))
-        searchInput=WebDriverWait(driver=self.driver,timeout=120).until(
+        time.sleep(random.randint(6,9))
+        searchInput=WebDriverWait(driver=self.driver,timeout=10).until(
             EC.presence_of_element_located((By.XPATH,'//div[@class="search-input-box"]/div[@class="input-wrap input-wrap-text"]/input'))
         )
         searchInput.send_keys(self.workName)
-        time.sleep(random.randint(1,3))
+        time.sleep(random.randint(5,8))
         searchButton=self.driver.find_element(By.XPATH,'//a[@class="search-btn"]')
-        time.sleep(random.randint(1,3))
+        time.sleep(random.randint(5,9))
         searchButton.click()
+        time.sleep(random.randint(7,10))
         self.getList()
         pass
 
@@ -107,29 +108,30 @@ class BossSpider():
             time.sleep(random.randint(3,5))
             nextPage=driver.find_element(By.XPATH,'//div[@class="options-pages"]/a[10]')    
             nextPage.click()
-            # 翻页后刷新页面
+            # time.sleep(random.randint(2.4))
+            # # 翻页后刷新页面
             # driver.refresh()
             index+=1
         pass
 
 
     def run(self):
-        self.getList()
+        self.loginBoss()
         self.f.close()
         pass
 
 
 def main():
-    url="https://www.zhipin.com/web/geek/job?query=php&city=101270100"
-    workName='php'
-    bossSpider=BossSpider(url=url,workName=workName)
-    bossSpider.run()
-    # mobile=input('请输入手机号：')
+    # url="https://www.zhipin.com/web/geek/job?query=php&city=101270100"
     # workName='php'
-    # if len(mobile)>0:
-    #    url="https://www.zhipin.com/chengdu"
-    #    bossSpider=BossSpider(url,mobile,workName)
-    #    bossSpider.run() 
+    # bossSpider=BossSpider(url=url,workName=workName)
+    # bossSpider.run()
+    mobile=input('请输入手机号：')
+    workName='php'
+    if len(mobile)>0:
+       url="https://www.zhipin.com/chengdu"
+       bossSpider=BossSpider(url,mobile,workName)
+       bossSpider.run() 
     
 
 
