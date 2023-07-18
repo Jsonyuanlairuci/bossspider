@@ -52,6 +52,7 @@ class ToMysql():
      
         while True:
             result=mysqlQueue.get()
+            print(result)
             sql=" \
             insert into workes \
             ( \
@@ -68,8 +69,8 @@ class ToMysql():
                 `company_info`, \
                 `number_range_begin`, \
                 `number_range_end`, \
-                `create_time`, \
-            )  values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s);"
+                `create_time` \
+            )  values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
             try:
                 mysqlConnCursor.execute(sql,result)
                 mysqlConnCursor.commit()
