@@ -102,6 +102,7 @@ class BossSpider():
                     }
                 print(val)
                 self.f.write(repr(val)+'\n')
+                yield val
             time.sleep(random.randint(10,15))    
             js="var q=document.documentElement.scrollTop=100000"      
             driver.execute_script(js)
@@ -116,7 +117,9 @@ class BossSpider():
 
 
     def run(self):
-        self.loginBoss()
+        result=self.loginBoss()
+        for row in result:
+            print(row)
         self.f.close()
         pass
 

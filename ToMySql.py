@@ -3,7 +3,7 @@ import sys
 import threading
 import time
 import queue
-import mysql
+import mysql.connector
 
 class ToMysql():
     def __init__(self,fileName='php') -> None:
@@ -11,15 +11,17 @@ class ToMysql():
         pass
 
     def getData(self):
+        workData=[]
         with open(sys.path[0]+'\\data\\{}.txt'.format(self.fileName),'r',encoding='utf-8') as f:
             data=f.readlines()
             for index in range(len(data)):
-                yield eval(data[index])         #字符串转换为字典
+                workData.append(data[index])          #字符串转换为字典
 
-        pass
+        return workData
 
     # 处理数据为元组的形式，方便直接插入数据库
-    def getTuple(self,row,mysqlQueue:queue.Queue):
+    def getTuple(self,row):
+        row=eval(row)
         salaryList=row['salary_range'].split('·')
         otherSalary=salaryList[1] if len(salaryList)>1 else ''
         salaryBegin=salaryList[0].replace('K','').split('-')
@@ -44,15 +46,29 @@ class ToMysql():
             numrangeEnd,
             int(time.time())
             )
-        # print(val)
-        mysqlQueue.put(val)
-
+        return val
     # 通过消息队列获取数据并且插入到数据库中
-    def insertData(self,mysqlQueue:queue.Queue,mysqlConnCursor):
-     
-        while True:
-            result=mysqlQueue.get()
-            print(result)
+    def insertData(self,data):
+            Db=mysql.connector.connect(
+                    host='127.0.0.1',
+                    user='root',
+                    passwd='root',
+                    database='boss'
+                )
+            mysqlConnCursor=Db.cursor()
+            insertData=[]
+            # 数据库去重
+            for index in range(len(data)):
+                 selectSql="select id from workes where company='{}';".format(data[index][9])
+                 mysqlConnCursor.execute(selectSql)
+                 result=mysqlConnCursor.fetchall()            
+                 if(len(result)<=0):
+                      insertData.append(data[index])  
+            # 列表去重
+            oneData=[]
+            for row in insertData:
+                 if row not in oneData:
+                      oneData.append(row)        
             sql=" \
             insert into workes \
             ( \
@@ -72,32 +88,24 @@ class ToMysql():
                 `create_time` \
             )  values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
             try:
-                mysqlConnCursor.execute(sql,result)
-                mysqlConnCursor.commit()
-                print("1 条记录已插入, ID:", mysqlConnCursor.lastrowid())
+                mysqlConnCursor.executemany(sql,oneData)
+                print("1 条记录已插入, ID:{}".format(mysqlConnCursor.lastrowid()) )
                 pass
             except BaseException as e:
                 print(e)
                 pass
-        pass    
+            finally:
+                mysqlConnCursor.close()
+                Db.close()  
 
     # 多线程 + 队列的形式处理数据，切插入数据库
     def run(self):
-        mysql=MysqlSingle.MYSQLSingel()
-        mysqlConnCursor,conn=mysql.get_conn()
         data=self.getData()
-        mysqlQueue=queue.Queue()
-        for row in data:
-            t=threading.Thread(target=self.getTuple,args=(row,mysqlQueue,))   #使用多线程的方式处理数据      队列生产者生产数据
-            t.start()
-            pass
+        workData=[]
+        for index in range(len(data)):
+              workData.append(self.getTuple(row=data[index]))
         
-        for index in range(5):
-            t=threading.Thread(target=self.insertData,args=(mysqlQueue,mysqlConnCursor,))      #消费者  消费队列
-            t.start()
-
-        mysqlConnCursor.close()
-        conn.close()    
+        self.insertData(workData)
 
         
             
