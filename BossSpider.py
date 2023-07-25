@@ -5,6 +5,7 @@ import time
 import random
 from Response import getDrivertDriverByWebdriver
 import sys
+import mysql.connector
 
 class BossSpider():
     def __init__(self,url,mobile='',workName='') -> None:
@@ -44,7 +45,6 @@ class BossSpider():
             # 点击登录
             loginButton=driver.find_element(By.XPATH,'//*[@id="wrap"]/div/div[2]/div[2]/div[2]/div[1]/div[3]/button')
             loginButton.click()
-            self.searchWork()
         pass
     
     
@@ -59,11 +59,10 @@ class BossSpider():
         time.sleep(random.randint(5,9))
         searchButton.click()
         time.sleep(random.randint(7,10))
-        self.getList()
         pass
 
     def getList(self):
-       
+        print(1213344)
         driver=self.driver
         index=1
         while index<11:
@@ -115,11 +114,93 @@ class BossSpider():
             index+=1
         pass
 
+     # 处理数据为元组的形式，方便直接插入数据库
+    def getTuple(self,row):
+        salaryList=row['salary_range'].split('·')
+        otherSalary=salaryList[1] if len(salaryList)>1 else ''
+        salaryBegin=salaryList[0].replace('K','').split('-')
+        experienceList=row['experience'].replace('年','').split('-')
+        experienceEnd=experienceList[1] if len(experienceList)>1 else ''
+        companyInfoList=row['company_info'].split('/')
+        numberRangeList=companyInfoList[-2].replace('人','').split('-')
+        numrangeEnd=numberRangeList[1] if len(numberRangeList)>1 else ''
+        val=(
+            row['work_name'],
+            self.workName,
+            salaryBegin[0],
+            salaryBegin[1],
+            otherSalary,
+            experienceList[0],
+            experienceEnd,
+            row['education'],
+            row['tech_stack'].replace('///',''),
+            row['company'],
+            row['company_info'],
+            numberRangeList[0],
+            numrangeEnd,
+            int(time.time())
+            )
+        return val
+    
+    def insertData(self,data):
+            Db=mysql.connector.connect(
+                    host='127.0.0.1',
+                    user='root',
+                    passwd='root',
+                    database='boss'
+                )
+            mysqlConnCursor=Db.cursor()
+            insertData=[]
+            # 数据库去重
+            for index in range(len(data)):
+                 selectSql="select id from workes where company='{}';".format(data[index][9])
+                 mysqlConnCursor.execute(selectSql)
+                 result=mysqlConnCursor.fetchall()            
+                 if(len(result)<=0):
+                      insertData.append(data[index])  
+            # 列表去重
+            oneData=[]
+            for row in insertData:
+                 if row not in oneData:
+                      oneData.append(row)        
+            sql=" \
+            insert into workes \
+            ( \
+                `title`, \
+                `programming_language`, \
+                `salary_begin`, \
+                `salary_end`, \
+                `other_salary`, \
+                `experience_begin`, \
+                `experience_end`, \
+                `education`, \
+                `tech_stack`, \
+                `company` , \
+                `company_info`, \
+                `number_range_begin`, \
+                `number_range_end`, \
+                `create_time` \
+            )  values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+            try:
+                mysqlConnCursor.executemany(sql,oneData)
+                print("1 条记录已插入, ID:{}".format(mysqlConnCursor.lastrowid()) )
+                pass
+            except BaseException as e:
+                print(e)
+                pass
+            finally:
+                mysqlConnCursor.close()
+                Db.close()  
 
     def run(self):
         result=self.loginBoss()
+        self.searchWork()
+        result=self.getList()
+        dataTupleList=[]
         for row in result:
-            print(row)
+            rowTuple=self.getTuple(row)
+            dataTupleList.append(rowTuple)
+        self.insertData(dataTupleList)    
         self.f.close()
         pass
 
